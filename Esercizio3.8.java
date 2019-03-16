@@ -11,14 +11,6 @@ public class OrdinaDispari {
 		Pos p5 = L.insert(p4, 4);
 		
 		ordinaDispari(L);
-		
-		Pos p = L.head();
-		while(L.finished(p) != false) {
-			System.out.println(L.read(p));	
-			p = L.next(p);
-		}
-		
-		System.out.println(L.read(p3));
 
 	}
 	
