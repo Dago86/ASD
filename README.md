@@ -1,2 +1,2 @@
 # ASD
-Esercizi riguardanti il libro Algoritmi e Strutture Dati (Bertossi, Montresor)
+Esercizi tratti dal libro Algoritmi e Strutture Dati (Bertossi, Montresor)
