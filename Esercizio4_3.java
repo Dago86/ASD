@@ -1,5 +1,5 @@
 package listabidirezionale;
-/** Date due Liste che contengono dei decimilari, creare una terza Lista che è la somma (le Liste quindi vanno calcolati come
+/** Date due Liste che contengono dei decimali, creare una terza Lista che è la somma (le Liste quindi vanno ragionate come
 se fossero interi e non si possono usare metodi specifici Java) **/
 public class Esercizio4_3 {
 
