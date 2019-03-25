@@ -15,21 +15,13 @@ public class rango {
 	}
 	
 	
-	public static void rango(List L) {
-		Pos p = L.tail();
-		Pos p_2 = L.prev(p);
-		while(L.prev(p)!=null) {
-			int val = (int) L.read(p);
-			System.out.println("Val vale" + val);
-			while(p != p_2) {
-				L.write(p_2, (int) L.read(p_2)+val);
-				System.out.println("Scritto " + L.read(p_2) );
-				p = L.prev(p);
-			}
-			p_2 = L.prev(p_2);
+	public static void rangoRic(Pos p1, Pos p2, List L) {
+		if(L.prev(p1)!=null) {
+			int val = (int) L.read(p1);
+			L.write(p2, val+ (int) L.read(p2));
+			rangoRic(p1 = L.prev(p1), p2 = L.prev(p2), L);
 			
 		}
-		
 	}
 
 }
