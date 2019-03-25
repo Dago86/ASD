@@ -7,8 +7,9 @@ public class rango {
 		Pos p0 = L.insert(null, 3);
 		Pos p1 = L.insert(p0, 2);
 		Pos p2 = L.insert(p1, 6);
-		
-		rango(L);
+		Pos p = L.tail();
+		Pos p_2 = L.prev(p);
+		rangoRic(p, p_2, L);
 		System.out.println(L.read(L.head()));
 		System.out.println(L.read(L.next(L.head())));
 		System.out.println(L.read(L.next(L.next(L.head()))));
