@@ -9,7 +9,7 @@ pseudocodice:
 int minimo(v, altezza, altezzaMin)
     if (altezza < altezzaMin) then altezzaMin = altezza
     if(t==null)
-        return altezzaMax
+        return altezzaMin
     if(t.left() == t.right() != null)
         altezza = 1 + minimo(t.left(), altezza, altezzaMin)
         altezza = 1 + minimo(t.right()altezza, altezzaMin)
