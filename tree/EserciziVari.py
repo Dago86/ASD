@@ -30,3 +30,22 @@ CONTA(T, count, a, b)
             CONTA(t.left(), count, a ,b)
        if(T.read < a)
            CONTA(t.right(),count, a, b)
+
+
+        
+        
+Sia dato un intero k e un albero T i cui nodi contiene interi positivi. Si 
+vuole aggiungere un figlio destro, che contenga un intero uguale 
+quello del padre, nelle foglie per le quali la somma degli interi dalla radice
+alla foglia sia uguale a k.
+
+
+void aggFoglia(T, k, sum)
+    if(t != null)
+        sum = sum + t.key();
+        if(t.left()==null && t.right()==null)
+            if (sum == k)
+                t.insertRight(t.parent.key())
+        else
+            aggFoglia(T.left(), k, sum)
+            aggFoglia(T.right(), k, sum)
