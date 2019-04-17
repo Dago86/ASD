@@ -18,6 +18,17 @@ bfsColor(Graph G, Node r)
   Queue S <- Queue()
   colori[] color <- new colori[1...G.n]
   S.enqueue(r)
+  foreach u in G.V() - {r} do visitato[u] <- null
   color[v] = bianco
-  foreach u in G.V() - {r} do visitato[u] <- false
+  while not S.isEmpty() do
+    Node u <- S.dequeue()
+     foreach v in G.adj(u) do
+       if color[v] = null
+          if v%2 == 0 then color[v] = rosso
+          else color[v] = bianco
+          S.enqueue()
+  verificaBipartizione(colori[])
+  
+  
+verificaBipartizione(colori[]) """ metodo che controlla che i e i+1 abbiano un colore diverso, se hanno colori uguali allora non è bipartito"""
         
