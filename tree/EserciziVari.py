@@ -49,3 +49,41 @@ void aggFoglia(T, k, sum)
         else
             aggFoglia(T.left(), k, sum)
             aggFoglia(T.right(), k, sum)
+            
+            
+      """ESERCIZIO: dato un albero calcolare la larghezza massima dei suoi nodi"""     
+    """ Questo algoritmo funziona basandosi sui livelli, che permettono di contare azzerando il count quando bisogna farlo"""
+
+def bfs(tree t)
+  Queue Q = Queue()
+  Q.enqueue(t)
+  
+  int max = 1  """ larghezza max """
+  int level = 1
+  int count = 1
+  while not Q.isEmpty() do
+    Tree u = Q.dequeue()
+    if u.level != level then
+        level = u.level
+        count = 0
+    count = count + 1 """ incremento il numero di nodi in quell'altezza"""
+    if (count > max) then max = count
+    Tree v = u.leftmostChild()
+    while v!= nil do
+      v.level = u.level + 1
+      Q.enqueue(v)
+      v = v.rightSibling()
+      
+      
+     """usare array A. es. se A[i] è n  il livello i ha n nodi"""
+     
+    def larghezza(Tree T, int level)
+        A[level] = A[level] + 1
+        Tree u = T.leftmostChild()
+        while (u != null)
+            larghezza(u, level+1)
+            u = u.rightSibling()
+      
+    return A[i] max
+
+      
