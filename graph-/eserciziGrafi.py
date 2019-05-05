@@ -31,4 +31,25 @@ bfsColor(Graph G, Node r)
   
   
 verificaBipartizione(colori[]) """ metodo che controlla che i e i+1 abbiano un colore diverso, se hanno colori uguali allora non è bipartito"""
-        
+    
+"""ESERCIZIO: Dato un grafo restituire il nodo con il numero piu alto di vicini"""
+
+"""La mia soluzione si basa su un array di n elementi quanto sono i nodi del grafo, e per ogni cella inserisco il numero di archi"""
+def visit(graph G)
+int [] Vettore = new int (1... G.n)
+int i = 0
+foreach u in G.V() do
+i ++
+  foreach v in G.adj(u) do
+  A[i] ++
+
+return max A[i]
+
+
+"""soluzione ufficiale"""
+def visit(graph G)
+  int [] Vettore = new int (1... G.n)
+  foreach u in G.V() do
+    for v in G.adj(u) do
+      Vettore[u] ++
+return max(Vettore[])
