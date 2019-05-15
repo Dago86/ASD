@@ -5,15 +5,12 @@ foglie del suo sottoalbero.
 
 pseudocodice:
 
-
-int minimo(v, altezza, altezzaMin)
-    if (altezza < altezzaMin) then altezzaMin = altezza
-    if(t==null)
-        return altezzaMin
-    if(t.left() == t.right() != null)
-        altezza = 1 + minimo(t.left(), altezza, altezzaMin)
-        altezza = 1 + minimo(t.right()altezza, altezzaMin)
-    else if (t.left() != null and t.right == null)
-        altezza = 1 + minimo(t.left())
-    else if (t.right() ! null and t.left == null)
-        altezza = 1 + minimo(t.right()altezza, altezzaMin)
+int minimo(v)
+{
+    if (t == null) return 0
+    if (t.left()=t.right()==null) return 1
+    if(t.left() == null)) return minimo(t.right()) + 1
+    if (t.lright() == null)) return minimo(t.left())+1
+                                           
+    return min (minimo(t.left())+minimo(t.right())+1=
+}
