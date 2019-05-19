@@ -1,7 +1,7 @@
 Node lca(Node root, node n1, node n2)
 {
  if (root == null) return null
- if (root == n1 ) && (root == n2) return root
+ if (root == n1 ) || (root == n2) return root
  
  Node left = (root.left(), n1, n2)
  Node right = (root.right(), n1, n2)
