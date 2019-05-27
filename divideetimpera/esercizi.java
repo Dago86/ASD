@@ -7,10 +7,10 @@ max3(int A[], inizio, fine)
 {
   if A[inizio] > A[fine]
      return A[0]
-  else if i == j
+  else if inizio == fine
      return A[i]
-  d1 = [(i + (j - i + 1) /3)]
-  d2 = [(i + (j - i + 1) * 2/3)]
+  d1 = [(inizio + (fine - inizio + 1) /3)]
+  d2 = [(inizio + (fine - inizio + 1) * 2/3)]
   return max(max3(A,i,d1 −1),max3(A,d1,d2 −1),ma
   
  }
